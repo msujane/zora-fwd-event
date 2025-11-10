@@ -41,11 +41,10 @@
 
 body{
   line-height: 1.6;
-  margin: 0;
   background-color: #000;
   color: #fff;
   -webkit-fontsmoothing: antialiased;
-  margin: 0 50px;
+  margin: 12px;
 }
 
 html{
@@ -135,7 +134,7 @@ body.modal-open, body:hover {
 }
 
 .zora_heading h2, .zora_heading_center h2, .zora_heading_right h2{
-  font-size: 48px;
+  font-size: 2rem;
   line-height: 58px;
   margin-bottom: 5px;
   text-transform: capitalize;
@@ -145,7 +144,7 @@ body.modal-open, body:hover {
   margin: 0;
   max-width: 100%;
   width: 100%;
-  font-size: 24px; 
+  font-size: 20px; 
 }
 
 /* --- button --- */

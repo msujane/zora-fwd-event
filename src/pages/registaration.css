@@ -1,3 +1,11 @@
+label{
+    color: #ffffff7f;
+}
+
+input{
+    color: #cccccc;
+}
+
 .zora_reg{
     display: flex;
 }
@@ -42,3 +50,19 @@ form button{
     height: 100vh;
 }
 
+
+
+@media screen and (max-width: 768px){
+    .zora_reg{
+        flex-direction: column;
+    }
+
+    .zora_reg_left{
+        width: 100%;
+    } 
+
+    .zora_reg_img{
+        display: none;
+    }
+    
+}
