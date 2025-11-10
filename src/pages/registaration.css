@@ -19,6 +19,12 @@ form button{
     margin-top: 30px;    
 }
 
+.zora_error{
+    color: #b00020;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
 .zora_reg_right{
     width: 50%;
 }

@@ -103,7 +103,7 @@ span{
 }
 
 sup, sub{
-  font-size: 1rem;
+  font-size: 30px;
 } 
 
 body.modal-open, body:hover {
@@ -173,5 +173,4 @@ body.modal-open, body:hover {
 .zora_btn:hover {
   box-shadow: 0px 26px 50px rgba(1, 22, 66, 0.3);
 }
-
 
