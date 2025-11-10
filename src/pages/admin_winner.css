@@ -1,0 +1,15 @@
+.zora_aw_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.zora_aw_place{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zora_aw_place svg{
+    padding: 0 10px;
+}

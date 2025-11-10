@@ -1,0 +1,38 @@
+.zora_reg{
+    display: flex;
+}
+
+.zora_reg_left{
+    width: 50%;
+}
+
+.zora_reg_form form input{
+    margin-bottom: 15px;    
+    border-bottom: 1px solid #ccc;
+}
+
+.zora_reg_form label{
+    margin-left:15px;
+}
+
+form button{
+    margin-top: 30px;    
+}
+
+.zora_reg_right{
+    width: 50%;
+}
+
+.zora_reg_img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zora_reg_img img{
+    width: auto;
+    height: 100vh;
+}
+

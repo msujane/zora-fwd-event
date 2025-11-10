@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -36,3 +36,141 @@
     transform: rotate(360deg);
   }
 }
+
+/* --- TYPOGRAPHY --- */
+
+body{
+  line-height: 1.6;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  -webkit-fontsmoothing: antialiased;
+  margin: 0 50px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, b, s {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a, a:hover, a:focus, button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input, textarea, select, button, label, svg, rect, svg polygon, img, a, :after, :before, :hover, :focus, .form-control:focus, .page-link:focus {
+  box-shadow: none;
+  outline: none !important;
+}
+
+input, textarea{
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  background: transparent;
+  color: #87bc25a4;
+  height: 2rem;
+  font-size: 1.2rem;
+  padding: 0px 20px;
+
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+img, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, input, textarea, select, button, label, svg, rect, svg polygon, img, a, :after, :before, :hover, :focus, .form-control:focus, .page-link:focus {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s ;
+}
+
+ul, ol{
+  margin: 0;
+  padding: 0;;
+}
+
+li{
+  list-style: none; 
+}
+
+span{
+  color: #86BC25;
+}
+
+sup, sub{
+  font-size: 30px;
+} 
+
+body.modal-open, body:hover {
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+/* --- headings --- */
+
+.zora_heading, .zora_heading_center, .zora_heading_right{
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.zora_heading_center{
+  align-items: center;
+  text-align: center;
+} 
+
+.zora_heading_right{
+  align-items: flex-end;
+  text-align: right;
+}
+
+.zora_heading h2, .zora_heading_center h2, .zora_heading_right h2{
+  font-size: 48px;
+  line-height: 58px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.zora_heading p, .zora_heading_center p, .zora_heading_right p{
+  margin: 0;
+  max-width: 100%;
+  width: 100%;
+  font-size: 24px; 
+}
+
+/* --- button --- */
+
+.zora_btn {
+  background-color: #86BC25;
+  color: #ffffff;
+  border: 1px solid #86BC25;
+  border-radius: 100px;
+  padding: 0 25px;
+  text-transform: capitalize;
+  min-width: 180px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.zora_btn:active {
+  background-color: #ffffff;
+  color: #86BC25;
+}
+
+.zora_btn:hover {
+  box-shadow: 0px 26px 50px rgba(1, 22, 66, 0.3);
+}
+
