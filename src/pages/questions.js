@@ -57,20 +57,21 @@ export default function Questions(){
  
                 <div className="zora_que_container">
                         <form className="register-form" onSubmit={handleSubmit}>
+                            <div className="zora_que_mcq">
                         {quiz.map((q, i)=> (
-                            <div key={q.id} style={{marginBottom:16}}>
-                                    <div className="question-text">{i+1}. {q.q}</div>
+                            <div key={q.id}>
+                                    <div>{i+1}. {q.q}</div>
                                     <div style={{display:'grid',gridTemplateColumns:'1fr',gap:8,marginTop:8}}>
                                     {q.options.map((opt, oi)=> (
                                             <label key={oi} className="zora_option_label">
                                                 <input type="radio" name={`q-${i}`} checked={answers[i]===oi} onChange={()=>handleSelect(i, oi)} />
-                                                <span className="option-text">{String.fromCharCode(65+oi)}. {opt}</span>
+                                                <span className="option-text">{opt}</span>
                                             </label>
                                     ))}
                             </div>
                             </div>
                         ))}
- 
+ </div>
                             <div className='zora_que_btn'>
                                 {!allAnswered && <div style={{color:'#ffd7a8',marginBottom:8}}>Please answer all questions to enable submission</div>}
                                     <button className="zora_btn" type="submit" disabled={!allAnswered}>Submit Answers</button>
