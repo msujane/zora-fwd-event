@@ -1,10 +1,13 @@
-.quiz-container {
-  max-width: 500px;
-  margin: 40px auto;
-  background: #f9f9fb;
-  border-radius: 8px;
-  padding: 24px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.09);
+.zora_que_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zora_option_label{
+  display: flex;
+  align-items: center;
 }
 
 .quiz-title {
@@ -78,4 +81,13 @@
   color: #007c70;
   font-weight: bold;
   font-size: 1.12rem;
+}
+
+.zora_que_btn {
+  margin: 16px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
 }

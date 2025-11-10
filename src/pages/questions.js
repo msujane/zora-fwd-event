@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './questions.css';
 import QUESTIONS from './questionData';
 import { useNavigate } from 'react-router-dom';
 
@@ -49,19 +50,19 @@ export default function Questions(){
         return (
         <div className="register-page">
             <div className="register-wrapper">
-                <div className="intro zora_heading_center">
+                <div className="zora_heading_center">
                     <h1><span>ZORA AI<sup>TM</sup></span></h1>
-                    <p className="intro-sub">Answer the following {quiz.length} questions</p>
+                    <h3>Answer the following {quiz.length} questions</h3>
                 </div>
  
-                <div className="glass-card">
+                <div className="zora_que_container">
                         <form className="register-form" onSubmit={handleSubmit}>
                         {quiz.map((q, i)=> (
                             <div key={q.id} style={{marginBottom:16}}>
                                     <div className="question-text">{i+1}. {q.q}</div>
                                     <div style={{display:'grid',gridTemplateColumns:'1fr',gap:8,marginTop:8}}>
                                     {q.options.map((opt, oi)=> (
-                                            <label key={oi} className="option-label">
+                                            <label key={oi} className="zora_option_label">
                                                 <input type="radio" name={`q-${i}`} checked={answers[i]===oi} onChange={()=>handleSelect(i, oi)} />
                                                 <span className="option-text">{String.fromCharCode(65+oi)}. {opt}</span>
                                             </label>
@@ -70,11 +71,10 @@ export default function Questions(){
                             </div>
                         ))}
  
-                            <div style={{marginTop:8,textAlign:'center'}}>
+                            <div className='zora_que_btn'>
                                 {!allAnswered && <div style={{color:'#ffd7a8',marginBottom:8}}>Please answer all questions to enable submission</div>}
-                                <div className="actions">
-                                    <button className="btn btn-primary" type="submit" disabled={!allAnswered}>Submit Answers</button>
-                                </div>
+                                    <button className="zora_btn" type="submit" disabled={!allAnswered}>Submit Answers</button>
+                               
                             </div>
                     </form>
                 </div>
