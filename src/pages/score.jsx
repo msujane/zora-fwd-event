@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './score.css';
 
 
 export default function Score(){
@@ -25,18 +26,17 @@ export default function Score(){
 	return (
 		<div className="register-page">
 			<div className="register-wrapper">
-						<div className="intro">
-							<h1>ZORA AI<sup className="tm">TM</sup></h1>
-							<p className="intro-sub">Your results</p>
+						<div className="zora_heading_center">
+							<h1><span>ZORA AI<sup>TM</sup></span></h1>
 						</div>
 
-				<div className="glass-card">
-					<div style={{textAlign:'center'}}>
-						<div style={{fontSize:22,fontWeight:700}}>You scored</div>
-						<div style={{fontSize:36,fontWeight:800,margin:'12px 0'}}>{score} / {total}</div>
+				<div className="zora_score_card">
+					<div>
+						<div>You scored</div>
+						<div>{score} / {total}</div>
 					</div>
 
-					<div style={{marginTop:16}}>
+					{/* <div style={{marginTop:16}}>
 						{breakdown.map((b, idx)=> (
 							<div key={idx} style={{padding:10,borderTop:'1px solid rgba(255,255,255,0.03)'}}>
 								<div style={{fontWeight:600}}>{idx+1}. {b.q}</div>
@@ -44,9 +44,10 @@ export default function Score(){
 								<div style={{color:'#b7f5d5'}}>Correct: {b.correctText}</div>
 							</div>
 						))}
-					</div>
-								<div style={{marginTop:18,textAlign:'center',color:'var(--muted)',fontSize:26}}>Thank you</div>
+					</div> */}
 				</div>
+					<h2 className='zora_heading_center'><span>THANKYOU</span></h2>
+				
 			</div>
 		</div>
 	)

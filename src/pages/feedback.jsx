@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './feedback.css';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -15,8 +16,8 @@ export default function Feedback(){
   return (
     <div className="register-page">
       <div className="register-wrapper">
-        <div className="intro">
-          <h1>ZORA AI<sup className="tm">TM</sup></h1>
+        <div className="zora_heading_center">
+          <h1><span>ZORA AI<sup className="tm">TM</sup></span></h1>
           <p className="intro-sub">We'd love your feedback</p>
         </div>
 
@@ -25,8 +26,8 @@ export default function Feedback(){
             <div className="form-title">Feedback</div>
             <textarea value={text} onChange={e=>setText(e.target.value)} placeholder="Write your feedback here" style={{minHeight:120,padding:12,borderRadius:8,border:'1px solid rgba(255,255,255,0.06)',background:'rgba(255,255,255,0.02)',color:'#fff'}} />
 
-            <div className="actions">
-              <button type="submit" className="btn btn-primary">Submit Feedback</button>
+            <div className="zora_btn_wrapper">
+              <button type="submit" className="zora_btn">Submit Feedback</button>
             </div>
           </form>
         </div>
