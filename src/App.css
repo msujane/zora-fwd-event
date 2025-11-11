@@ -103,7 +103,7 @@ span{
 }
 
 sup, sub{
-  font-size: 30px;
+  font-size: 1rem;
 } 
 
 body.modal-open, body:hover {
