@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './admin_winner.css';
 import { winner1, winner2, winner3, medal1, medal2, medal3 } from '../assets/svg.js';
+import { getTopWinners } from '../api/api';
 
 const Adminwinner = () => {
     const [winners, setWinners] = useState(['', '', '']);
@@ -8,24 +9,17 @@ const Adminwinner = () => {
     const [error, setError] = useState('');
 
     useEffect(() => {
-        // Fetch three winner names from the backend
-        fetch('/api/winners') // <-- change this URL to your actual endpoint!
-            .then(res => {
-                if (!res.ok) throw new Error('Failed to fetch');
-                return res.json();
-            })
-            .then(data => {
-                // expecting: [{name: "Person1"}, {name: "Person2"}, {name: "Person3"}]
-                setWinners(data.slice(0, 3).map(w => w.name));
+        getTopWinners()
+            .then(winnerNames => {
+                setWinners([winnerNames[0] || '', winnerNames[1] || '', winnerNames[2] || '']);
                 setLoading(false);
             })
-            .catch(err => {
+            .catch(() => {
                 setError('Failed to load winner names.');
                 setLoading(false);
             });
     }, []);
 
-    // SVG arrays for easier indexing
     const winnerSvgs = [winner1, winner2, winner3];
     const medalSvgs = [medal1, medal2, medal3];
 
