@@ -31,4 +31,4 @@ This app allows participants to register, attempt a quiz, provide feedback and s
 - npm start
 
 ## Link for Backend
--https://github.com/msujane/zora-fwd-event-backend.git
+- https://github.com/msujane/zora-fwd-event-backend.git
