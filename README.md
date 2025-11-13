@@ -23,9 +23,9 @@ This app allows participants to register, attempt a quiz, provide feedback and s
 
 ### Clone the repo
 -bash
-git clone https://github.com/msujane/zora-fwd-event.git
-cd zora-fwd-event
+- git clone https://github.com/msujane/zora-fwd-event.git
+- cd zora-fwd-event
 
 ##  Quick Start
-npm i
-npm start
+- npm i
+- npm start
