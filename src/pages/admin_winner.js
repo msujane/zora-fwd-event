@@ -28,6 +28,7 @@ const Adminwinner = () => {
             <div className='zora_aw_header'>
                 <div className='zora_heading_center'>
                     <h2><span>ZORA AI <sup>TM</sup></span></h2>
+                    <h3>Winner’s Spotlight</h3>
                 </div>
             </div>
             <div className='zora_aw_content'>
